@@ -9,6 +9,8 @@ Character::Character()
 	state = CharacterState::ALIVE;
 }
 
+
+//this is a constructor with initialization
 Character::Character(int health, int strength, int defense, CharacterState state)
 {
 	this->health = health;
