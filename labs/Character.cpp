@@ -9,6 +9,14 @@ Character::Character()
 	state = CharacterState::ALIVE;
 }
 
+Character::Character(int health, int strength, int defense, CharacterState state)
+{
+	this->health = health;
+	this->strength = strength;
+	this->defense = defense;
+	this->state = state;
+}
+
 
 void Character::setHealth(int newhealth)
 {
@@ -19,3 +27,4 @@ void Character::setHealth(int newhealth)
 		state = CharacterState::DEAD;
 	}
 }
+

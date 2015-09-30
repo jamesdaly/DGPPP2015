@@ -110,13 +110,14 @@ int main()
 	
 	
 	Character* playerOne = new Character();
-	Character* playerTwo = new Character();
+	//here we can use a contstructor with initialization
+	Character* playerTwo = new Character(10, 16 , 8, CharacterState::ALIVE);
 	playerOne->setHealth(10);
-	playerTwo->setHealth(10);
+	//playerTwo->setHealth(10);
 	playerOne->setStrength(20);
-	playerTwo->setStrength(16);
+	//playerTwo->setStrength(16);
 	playerOne->setDefense(8);
-	playerTwo->setDefense(14);
+	//playerTwo->setDefense(14);
 
 	StoryEventHandler storyHandler;
 

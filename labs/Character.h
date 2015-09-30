@@ -5,6 +5,8 @@ class Character
 {
 public:
 	Character();
+	//Constructor initialization
+	Character(int health, int strength, int defense, CharacterState state);
 	~Character(){}
 	//getters
 	int getHealth(){ return health;}
