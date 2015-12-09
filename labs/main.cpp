@@ -1,5 +1,6 @@
 #include <iostream>
 #include "GameManager.h"
+#include "Singleton_WorldManager.h"
 
 using namespace std;
 
@@ -22,5 +23,9 @@ void main()
 		gm->draw();
 	}
 
+	//Create character
+	Character* c = new Character();
+
+	WorldManager::getInstance()->registerCharacter(c);
 	
 }
